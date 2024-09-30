@@ -1,0 +1,23 @@
+// didalam convex file ini adalah action yang akan dijalankan oleh convex
+import { action } from "./_generated/server";
+import { v } from "convex/values";
+import OpenAi from "openai";
+import { SpeechCreateParams } from "openai/resources/audio/speech.mjs";
+
+const openai = new OpenAi({
+    apiKey: process.env.OPENAI_API_KEY,
+});
+// function ini akan menggenerate audio dari input yang diberikan
+export const generateAudioAction = action({
+  args: { input: v.string(), voice: v.string() },
+  handler: async (_, { voice, input }) => {
+    // call the openai api here
+    const mp3 = await openai.audio.speech.create({
+        model: "tts-1",
+        voice: voice as SpeechCreateParams["voice"],
+        input,
+      });
+      const buffer = await mp3.arrayBuffer();
+    return buffer;
+  },
+});
