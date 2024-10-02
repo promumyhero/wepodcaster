@@ -135,7 +135,6 @@ const GeneratePodcast = (props: GeneratePodcastProps) => {
                   "Generate"
                 )}
             </Button>
-
         </div>
         {props.audio && (
             <audio 
