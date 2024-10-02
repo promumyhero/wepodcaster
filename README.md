@@ -39,7 +39,7 @@ WePodcast dilisensikan di bawah [MIT License](link-ke-lisensi).
 
 ## 📞 Kontak
 
-Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk menghubungi kami di [email@wepodcast.com](mailto:email@wepodcast.com).
+Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk menghubungi kami di [ridhoherywinarto@gmail.com](mailto:email@wepodcast.com).
 
 ---
 
