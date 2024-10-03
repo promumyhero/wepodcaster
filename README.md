@@ -43,4 +43,4 @@ Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk menghubungi kami d
 
 ---
 
-Dibuat dengan ❤️ oleh Tim WePodcast
+Dibuat dengan ❤️ oleh Ridho Hery Winarto

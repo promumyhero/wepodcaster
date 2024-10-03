@@ -40,7 +40,7 @@ const PodcastDetails = ({ params: {podcastId} }: { params: {podcastId: Id<'podca
       {/* this is a podcast player || ini adalah fitur podcast player */}
       <PodcastDetailPlayer 
         isOwner={isOwner}
-        podcastid={podcast._id}
+        podcastId={podcast._id}
         {...podcast}
       />
       <p className="text-white-2 text-16 pb-8 pt-[45px] font-medium max-md:text-center">
