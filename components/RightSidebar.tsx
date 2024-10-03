@@ -15,7 +15,7 @@ const RightSidebar = () => {
   const topPodcasters = useQuery(api.users.getTopUserByPodcastCount);
   const { user } = useUser();
   return (
-    <section className={cn('right_sidebar h-[calc(100vh-5px)]')}>
+    <section className={cn('right_sidebar h-[calc(100vh-5px)]', {})}>
       <SignedIn>
         <Link href={`/profile/${user?.id}`} className="flex gap-3 pb-12">
           <UserButton />
