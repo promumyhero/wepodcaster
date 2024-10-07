@@ -26,7 +26,7 @@ const Discover = ({ searchParams: { search} }: { searchParams : { search: string
               {podcastsData?.map(({ _id, podcastTitle, podcastDescription, imageUrl }) => (
                 <PodcastCard 
                   key={_id}
-                  imgURL={imageUrl}
+                  imgUrl={imageUrl}
                   title={podcastTitle}
                   description={podcastDescription}
                   podcastId={_id}
