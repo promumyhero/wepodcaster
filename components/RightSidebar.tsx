@@ -10,12 +10,17 @@ import { useQuery } from 'convex/react';
 import { api } from '@/convex/_generated/api';
 import { cn } from '@/lib/utils';
 import router from 'next/router';
+import { useAudio } from '@/providers/AudioProvider';
 
 const RightSidebar = () => {
   const topPodcasters = useQuery(api.users.getTopUserByPodcastCount);
   const { user } = useUser();
+  const { audio } = useAudio();
+
   return (
-    <section className={cn('right_sidebar h-[calc(100vh-5px)]', {})}>
+    <section className={cn('right_sidebar h-[calc(100vh-5px)]', {
+      'h-[calc(100vh-140px)]': audio?.audioUrl
+        })}>
       <SignedIn>
         <Link href={`/profile/${user?.id}`} className="flex gap-3 pb-12">
           <UserButton />

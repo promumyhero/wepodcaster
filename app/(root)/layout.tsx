@@ -22,7 +22,6 @@ export default function RootLayout({
                     alt="menu icon"
                     height={30}
                     width={30}
-
                   />
                   <MobileNav />
                 </div>
