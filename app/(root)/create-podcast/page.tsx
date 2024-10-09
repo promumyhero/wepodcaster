@@ -60,12 +60,6 @@ const CreatePodcast = () => {
   const createPodcast = useMutation(api.podcasts.createPodcast);
   const { toast } = useToast();
 
-
-  
-
-
-
-  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
